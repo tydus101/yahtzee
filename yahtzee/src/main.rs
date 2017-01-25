@@ -1,5 +1,6 @@
 use std::thread;
-
+use std::sync::mpsc;
+/*
 struct Node {
 	c1: Option<Box<Node>>,
 	c2: Option<Box<Node>>,
@@ -8,7 +9,8 @@ struct Node {
 	thread: thread,
 
 }
-
+*/
+/*
 impl Node {
 	fn do_work(&mut self) {
 		thread::spawn
@@ -43,12 +45,17 @@ impl Node {
 
 	}
 }
+*/
+
+fn compute<F>(computation: F) -> f64 
+    where Fn() -> f64{
+    
 
 
 
-
-fn main() {
-	let mut n = Node::new(160000);
-	n.create_children();
-    println!("{}", n.c1.unwrap().c1.unwrap().itt);
 }
+
+fn yahtzee_factory()
+
+
+
